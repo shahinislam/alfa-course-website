@@ -165,7 +165,7 @@ const CoursePlatform = () => {
                 <Code className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold gradient-text">CodeMaster</h1>
+                <h1 className="text-2xl font-bold gradient-text">ALFAIIT</h1>
                 <p className="text-xs text-slate-400 font-mono">Learn. Build. Excel.</p>
               </div>
             </div>
