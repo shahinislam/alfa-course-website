@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Search, Play, Star, Users, Clock, Award, ChevronRight, Menu, X, BookOpen, Code, Sparkles, TrendingUp, CheckCircle, ArrowRight, Mail, Phone, MapPin, Send, Youtube } from 'lucide-react';
+import Link from 'next/link';
 
 const CoursePlatform = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -500,6 +501,20 @@ const CoursePlatform = () => {
                     <span>Enroll via WhatsApp</span>
                     <ChevronRight className="w-4 h-4" />
                   </button>
+
+                  {course.id === 1 ? (
+                    <Link
+                      href="/course/ios-development-masterclass"
+                      prefetch={false}
+                      className="relative z-10 block w-full mt-3 px-6 py-3 bg-slate-800 rounded-xl text-white font-medium hover:bg-slate-700 transition-all text-center"
+                    >
+                      View Details
+                    </Link>
+                  ) : (
+                    <div className="mt-3 w-full px-6 py-3 bg-slate-800/50 rounded-xl text-center">
+                      <span className="text-slate-500 text-sm">Coming Soon</span>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
