@@ -7,10 +7,10 @@ import { useState } from 'react';
 
 export default function IOSCoursePage() {
   const [showModal, setShowModal] = useState(false);
-  const [selectedPart, setSelectedPart] = useState(null);
+  const [selectedPart, setSelectedPart] = useState<any>(null);
   const WHATSAPP_NUMBER = "8801234567890";
 
-  const handleEnrollClick = (part) => {
+  const handleEnrollClick = (part: any) => {
     setSelectedPart(part);
     setShowModal(true);
   };
